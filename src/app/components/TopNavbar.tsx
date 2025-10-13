@@ -1,3 +1,5 @@
+// src/app/components/TopNavbar.tsx
+
 'use client';
 
 import Link from 'next/link';
@@ -29,8 +31,8 @@ export default function TopNavbar() {
                   href={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive
-                      ? 'text-black dark:text-white bg-gray-100 dark:bg-gray-800'
-                      : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800/50'
+                  ? 'bg-green-100 text-black dark:bg-green-100 dark:text-black'
+                  : 'text-gray-500 hover:bg-green-200 hover:text-black dark:text-gray-400 dark:hover:bg-green-200 dark:hover:text-black'
                   }`}
                 >
                   {item.name}
@@ -42,7 +44,7 @@ export default function TopNavbar() {
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-200 dark:hover:text-black hover:bg-green-100 dark:hover:bg-green-200"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -63,8 +65,8 @@ export default function TopNavbar() {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive
-                      ? 'text-black dark:text-white bg-gray-100 dark:bg-gray-800'
-                      : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800/50'
+                  ? 'bg-green-100 text-black dark:bg-green-100 dark:text-black'
+                  : 'text-gray-500 hover:bg-green-200 hover:text-black dark:text-gray-400 dark:hover:bg-green-200 dark:hover:text-black'
                   }`}
                 >
                   {item.name}

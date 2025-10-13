@@ -29,10 +29,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="hidden lg:block">
+        <div className="hidden lg:block md:block">
           <SideNavbar />
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden md:hidden">
           <TopNavbar />
         </div>
         {children}
