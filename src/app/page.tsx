@@ -7,6 +7,15 @@ export default function Home() {
         <p className="text-[30px] font-semibold mb-2">Software Engineer</p>
         <p className="text-[18px] font-medium">Knock Knock. Race Condition. Who's there?</p>
       </div>
+      <div className="mt-15">
+        <div className="flex justify-between">
+          <p className="text-3xl font-bold">Recent Projects</p>
+          <button className="ml-4 px-4 py-0 bg-gray-300 text-black rounded-md hover:bg-green-600 transition-colors">
+            View All
+          </button>
+        </div>
+      </div>
+
     </div>
   );
 }
