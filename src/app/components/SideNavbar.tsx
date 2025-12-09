@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { navItems } from './Navbar.shared';
 
@@ -10,9 +11,9 @@ export default function SideNavbar() {
 
   return (
     <aside className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-gray-200 p-6 dark:bg-gray-900 dark:border-gray-800 hidden md:flex flex-col">
-      <div className="mb-8">
+      <div className="mb-8 flex flex-col items-center">
+        <Image src="/profile.webp" alt="Profile Picture" width={100} height={100} className="rounded-full mb-4 border-2 border-gray-200" />
         <h1 className="text-2xl font-bold dark:text-white">Hasham Alam</h1>
-        <p className="text-sm text-gray-600 dark:text-gray-400 dark:text-white-200">Developer</p>
       </div>
       
       <nav className="space-y-2">

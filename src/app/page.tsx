@@ -1,12 +1,10 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="ml-64 p-8 bg-background text-foreground min-h-screen">
-      <h1 className="text-4xl font-bold mb-4">Welcome to My Personal Site</h1>
-      <p className="text-lg mb-8">
-        This is a simple personal website built with Next.js and Tailwind CSS.
-      </p>
+    <div className="ml-64 p-8 mt-5 bg-background text-foreground min-h-screen">
+      <p className="text-[20px] font-medium mb-2">Long time, no C 👋</p>
+      <h1 className="text-5xl font-bold mb-1">I'm Hasham Alam</h1>
+      <p className="text-[30px] font-semibold mb-2">Software Engineer</p>
+      <p className="text-[18px] font-medium">Knock Knock. Race Condition. Who's there?</p>
     </div>
   );
 }
